@@ -534,3 +534,20 @@ button {
     width: clamp(100px, 45vw, 160px);
   }
 }
+.audience-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.audience-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.audience-list li::before {
+  content: "✓ ";
+  color: #6b63ff;
+  font-weight: bold;
+}
