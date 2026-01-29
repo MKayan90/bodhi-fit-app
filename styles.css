@@ -739,4 +739,36 @@ body {
 }
 /* TEST: if you can see hot pink, the site is loading this file */
 body { background: hotpink !important; }
+/* Stop any hero content from forcing the page wider */
+.hero,
+.hero-card,
+.hero-preview-card {
+  max-width: 100%;
+}
+
+/* Critical: allow grid/flex children to shrink instead of overflowing */
+.hero > * {
+  min-width: 0;
+}
+
+/* Make the preview session wrap properly */
+.preview-session {
+  flex-wrap: wrap;
+}
+
+.preview-session img.preview-img {
+  flex: 0 0 auto;
+}
+
+/* Ensure long text doesn't force width */
+.session-name,
+.session-sub,
+.preview-block p {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
 
