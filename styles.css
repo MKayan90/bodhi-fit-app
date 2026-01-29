@@ -774,39 +774,3 @@ body {
 .hero-card-header {
   display: block;
 }
-:root {
-  color-scheme: light;
-
-  /* Core ink */
-  --ink: #191724;           /* deep, soft charcoal */
-  --ink-soft: #4a495e;
-
-  /* Surfaces */
-  --surface: #ffffff;
-  --surface-strong: #f7f4f2; /* warm cream */
-
-  /* Aroma Nova palette */
-  --accent: #7c6cf6;         /* soft violet (nova) */
-  --accent-strong: #5b46e6;
-  --highlight: #f2c7b7;      /* warm peach (aroma warmth) */
-  --sage: #9fb7a8;           /* calm herbal note */
-
-  /* Halo gradient (subtle sunrise + nova) */
-  --halo: linear-gradient(120deg, #a9d8c6, #f4c6b8, #8d7cff);
-
-  /* Shadows */
-  --shadow: 0 28px 80px rgba(25, 23, 36, 0.12);
-
-  --white: #ffffff;
-}
-body {
-  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
-  background:
-    radial-gradient(circle at 20% 10%, rgba(244, 198, 184, 0.35) 0%, transparent 45%),
-    radial-gradient(circle at 80% 30%, rgba(169, 216, 198, 0.35) 0%, transparent 50%),
-    radial-gradient(circle at 60% 90%, rgba(141, 124, 255, 0.22) 0%, transparent 55%),
-    linear-gradient(180deg, #fbf7f4 0%, #ffffff 60%);
-  color: var(--ink);
-  line-height: 1.6;
-}
-
