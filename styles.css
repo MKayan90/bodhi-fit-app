@@ -690,7 +690,7 @@ button {
     height: 180px;
   }
 }
-* { outline: 1px solid rgba(255,0,0,.2); }
+
 --accent: #6a63ff;
 --accent-strong: #3c31d5;
 --highlight: #f0c7ff;
@@ -739,3 +739,4 @@ body {
 }
 /* TEST: if you can see hot pink, the site is loading this file */
 body { background: hotpink !important; }
+
