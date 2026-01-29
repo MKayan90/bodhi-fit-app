@@ -25,10 +25,15 @@ html, body {
 
 body {
   font-family: "DM Sans", system-ui, -apple-system, sans-serif;
-  background: radial-gradient(circle at top, #f4f0ff 0%, #ffffff 55%, #f8f8ff 100%);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(244, 198, 184, 0.22) 0%, transparent 48%),
+    radial-gradient(circle at 85% 20%, rgba(169, 216, 198, 0.20) 0%, transparent 55%),
+    radial-gradient(circle at 60% 90%, rgba(141, 124, 255, 0.14) 0%, transparent 60%),
+    linear-gradient(180deg, #fbf8f6 0%, #ffffff 70%);
   color: var(--ink);
   line-height: 1.6;
 }
+
 
 a {
   color: inherit;
@@ -194,6 +199,22 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 48px;
   align-items: center;
+}
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border-radius: 40px;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(244, 198, 184, 0.35), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(169, 216, 198, 0.30), transparent 60%),
+    radial-gradient(circle at 55% 85%, rgba(141, 124, 255, 0.22), transparent 65%);
+  filter: blur(18px);
+  z-index: -1;
 }
 
 .hero-content h1 {
@@ -773,4 +794,12 @@ body {
 }
 .hero-card-header {
   display: block;
+}
+.hero-preview-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(25, 23, 36, 0.08);
+  backdrop-filter: blur(10px);
+}
+.preview-session {
+  background: linear-gradient(135deg, rgba(244, 198, 184, 0.22), rgba(141, 124, 255, 0.10));
 }
