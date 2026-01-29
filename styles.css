@@ -662,3 +662,12 @@ button {
   margin-top: 10px;
   cursor: pointer;
 }
+/* Prevent flex rows from causing horizontal overflow */
+.preview-session > div {
+  min-width: 0; /* critical for flex text shrinking */
+}
+
+.session-name,
+.session-sub {
+  overflow-wrap: anywhere;
+}
