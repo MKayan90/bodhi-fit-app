@@ -771,4 +771,7 @@ body { background: hotpink !important; }
     grid-template-columns: 1fr;
   }
 }
+.hero-card-header {
+  display: block;
+}
 
