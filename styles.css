@@ -691,3 +691,49 @@ button {
   }
 }
 * { outline: 1px solid rgba(255,0,0,.2); }
+--accent: #6a63ff;
+--accent-strong: #3c31d5;
+--highlight: #f0c7ff;
+--accent: #8b6cff;        /* warmer violet */
+--accent-strong: #6a4cff;
+--highlight: #f4c6dd;     /* blush pink */
+--warm: #fff4ef;
+background: radial-gradient(circle at top, #f7f1ff 0%, #fff8f4 55%, #ffffff 100%);
+.hero-content h1 {
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+body {
+  color: #2b2a3a;
+}
+.hero-logo {
+  position: relative;
+  padding: 12px;
+  border-radius: 28px;
+  background: linear-gradient(135deg,#fff,#f4ecff);
+  box-shadow: 0 28px 70px rgba(180,140,255,.25);
+}
+
+.hero-logo::after {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border-radius: 40px;
+  background: radial-gradient(circle,#f4c6dd 0%,transparent 65%);
+  opacity: .5;
+  z-index: -1;
+}
+.button {
+  background: linear-gradient(135deg,#9a7dff,#ffb7d5);
+}
+
+.button.secondary {
+  background: white;
+}
+.audience-list li {
+  font-weight: 500;
+}
+
+.metric-value {
+  color: var(--accent-strong);
+}
